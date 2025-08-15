@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>P2P & Арбитраж — неоновый лендинг</title>
+  <meta name="description" content="Одностраничный лендинг под P2P и биржевой арбитраж. Неоновая эстетика, плавные вступительные анимации, крупная кнопка Telegram." />
+
+  <!-- Fonts (новый стиль): Teko + Exo 2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="java.js"></script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="prewrap">
+      <div class="spinner" aria-label="Loading"></div>
+      <div class="bar"><i></i></div>
+      <div class="pill">Загрузка интерфейса…</div>
+    </div>
+  </div>
+
+  <!-- Неоновий фон (анімується в CSS) -->
+  <div id="backdrop" aria-hidden="true"></div>
+
+  <div class="pagewrap">
+    <header class="container head">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#18ffd6"/><stop offset="1" stop-color="#7a5cff"/></linearGradient></defs>
+          <rect x="6" y="6" width="36" height="36" rx="10" fill="url(#g)"/>
+          <path d="M16 26c8 0 8-10 16-10v4c-8 0-8 10-16 10v-4Z" fill="#0b0f1a"/>
+          <circle cx="32" cy="30" r="4" fill="#0b0f1a"/>
+        </svg>
+        <span>P2P/ARB Desk</span>
+      </div>
+      <div class="pill">минимум шума — максимум скорости</div>
+    </header>
+
+    <!-- HERO -->
+    <section class="container hero">
+      <h1 class="headline">
+        <span class="title" data-fx="chars">ЛИКВИДНОСТЬ БЕЗ ОЖИДАНИЙ</span>
+        <span class="subline" data-fx="words">P2P → Биржи за один клик</span>
+      </h1>
+      <p class="lede">Оперативные сделки, прозрачные условия и быстрый выход в USDT/фиат. Контакт — через Telegram.</p>
+
+      <a class="cta" id="tgBtn" href="https://t.me/p2p_exche" target="_blank" rel="noopener">
+        <span class="ico">✈</span> Перейти в Telegram
+      </a>
+
+      <div class="stats">
+        <div class="badge"><span>Спред</span><b>4–7%</b></div>
+        <div class="badge"><span>Время</span><b>20–45 мин</b></div>
+      </div>
+
+      <div class="ticker">
+        <div class="track" id="tickerTrack"></div>
+      </div>
+    </section>
+
+    <!-- Фичі -->
+    <section class="container grid">
+      <article class="card">
+        <h3>P2P платформы</h3>
+        <p>Binance, Bybit, OKX — только проверенные мерчанты и быстрые расчёты.</p>
+      </article>
+      <article class="card">
+        <h3>Биржевой арбитраж</h3>
+        <p>Работаем на разнице спотовых цен. Быстрая маршрутизация ордеров.</p>
+      </article>
+      <article class="card">
+        <h3>Риск-контроль</h3>
+        <p>Лимиты на контрагентов, контроль валют и анти-фрод правила.</p>
+      </article>
+      <article class="card">
+        <h3>Онлайн 24/7</h3>
+        <p>Связь в Telegram. Резервные каналы + дежурные операторы.</p>
+      </article>
+    </section>
+
+    <footer class="container foot">
+      © <span id="year"></span> P2P/ARB Desk · Не инвестиционный совет.
+    </footer>
+  </div>
+</body>
+</html>
